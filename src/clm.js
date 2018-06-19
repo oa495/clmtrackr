@@ -631,7 +631,7 @@ var clm = {
 				params = pv.slice(0);
 			}
 
-			var cc = canvas.getContext('2d');
+			var cc = canvas.getContext('2d') ? canvas.getContext('2d') : canvas.drawingContext;
 			cc.fillStyle = 'rgb(200,200,200)';
 			cc.strokeStyle = 'rgb(130,255,50)';
 			//cc.lineWidth = 1;
